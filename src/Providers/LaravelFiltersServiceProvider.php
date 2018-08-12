@@ -15,7 +15,7 @@ class LaravelFiltersServiceProvider extends ServiceProvider
     {
 		if ($this->app->runningInConsole()) {
 			$this->commands([
-				
+
 			]);
 		}
     }
