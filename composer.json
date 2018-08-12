@@ -1,0 +1,29 @@
+{
+    "name": "mikerovers/laravel-filters",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mikerovers",
+            "email": "mikerovers@yourdomain.com"
+        }
+    ],
+    "autoload": {
+            "psr-4": {
+                "MikeRovers\\LaravelFilters\\": "src/"
+            }
+        },
+    "require": {},
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MikeRovers\\LaravelFilters\\Providers\\LaravelFiltersServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
