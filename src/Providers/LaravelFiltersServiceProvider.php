@@ -3,7 +3,6 @@
 namespace MikeRovers\LaravelFilters\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Mikerovers\LaravelFilters\Commands\CreateFilterCollection;
 
 class LaravelFiltersServiceProvider extends ServiceProvider
 {
@@ -16,7 +15,7 @@ class LaravelFiltersServiceProvider extends ServiceProvider
     {
 		if ($this->app->runningInConsole()) {
 			$this->commands([
-				CreateFilterCollection::class
+				
 			]);
 		}
     }
