@@ -1,6 +1,6 @@
 <?php
 
-namespace Mikerovers\LaravelFilters\Filters;
+namespace MikeRovers\LaravelFilters\Filters;
 
 use Illuminate\Database\Eloquent\Builder;
 use Mikerovers\LaravelFilters\FilterInterface;

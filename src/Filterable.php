@@ -1,6 +1,6 @@
 <?php
 
-namespace Mikerovers\LaravelFilters;
+namespace MikeRovers\LaravelFilters;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
