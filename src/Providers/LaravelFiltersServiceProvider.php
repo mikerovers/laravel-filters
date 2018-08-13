@@ -18,6 +18,10 @@ class LaravelFiltersServiceProvider extends ServiceProvider
 
 			]);
 		}
+
+		$this->publishes([
+			__DIR__ . '/../../config/config.php' => config_path('laravel-filters.php')
+		], 'config');
     }
 
     /**
