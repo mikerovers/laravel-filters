@@ -4,14 +4,18 @@ namespace MikeRovers\LaravelFilters;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
-use Mikerovers\LaravelFilters\Filters\LimitFilter;
-use Mikerovers\LaravelFilters\Filters\OffsetFilter;
+use MikeRovers\LaravelFilters\Filters\LimitFilter;
+use Mikerovers\LaravelFilters\Filters\NotNullFilter;
+use Mikerovers\LaravelFilters\Filters\NullFilter;
+use MikeRovers\LaravelFilters\Filters\OffsetFilter;
 
 class AbstractFilter {
 	protected $request;
 	protected $filters = [
 		'limit' => LimitFilter::class,
-		'offset' => OffsetFilter::class
+		'offset' => OffsetFilter::class,
+		'null' => NullFilter::class,
+		'notnull' => NotNullFilter::class,
 	];
 
 	public function __construct(Request $request)
